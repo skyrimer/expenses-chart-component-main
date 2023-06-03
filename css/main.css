@@ -1,0 +1,152 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  font-family: system-ui;
+  line-height: 1;
+  font-family: "DM Sans", sans-serif;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  min-height: 100vh;
+  width: min(512px, 95%);
+  margin-inline: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+}
+
+:root {
+  --clr-soft-red: hsl(10, 79%, 65%);
+  --clr-cyan: hsl(186, 34%, 60%);
+  --clr-dark-brown: hsl(25, 47%, 15%);
+  --clr-medium-brown: hsl(28, 10%, 53%);
+  --clr-cream: hsl(27, 66%, 92%);
+  --clr-pale-orange: hsl(33, 100%, 98%);
+}
+
+body {
+  background-color: var(--clr-cream);
+}
+
+section {
+  width: 100%;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+main {
+  font-size: clamp(0.75rem, 2.9vw, 1rem);
+}
+
+.balance-description {
+  position: relative;
+  padding: 1.7em;
+  border-radius: 1em;
+  color: var(--clr-pale-orange);
+  background-color: var(--clr-soft-red);
+}
+.balance-description span {
+  font-size: 1em;
+}
+.balance-description h2 {
+  margin-top: 0.5em;
+}
+.balance-description::after {
+  content: url("/images/logo.svg");
+  position: absolute;
+  top: 50%;
+  right: 2em;
+  transform: translateY(-50%);
+}
+
+.spendings {
+  background-color: var(--clr-pale-orange);
+  border-radius: 2em;
+  padding: 2.2em;
+  color: var(--clr-dark-brown);
+}
+
+.spendings-chart {
+  width: 100%;
+  min-height: 200px;
+  margin-block: 3em;
+}
+
+.spendings-description {
+  color: var(--clr-medium-brown);
+}
+.spendings-description .spendigs-value {
+  margin-top: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.spendings-description .spendigs-value > div p:first-child {
+  text-align: right;
+  font-weight: 700;
+  color: var(--clr-dark-brown);
+  margin-bottom: 0.2em;
+}
+.spendings-description h1 {
+  font-size: 2.4em;
+  color: var(--clr-dark-brown);
+}/*# sourceMappingURL=main.css.map */
